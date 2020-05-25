@@ -1,0 +1,15 @@
+form{
+    margin: 20px;
+}
+form .error {
+    color:red;
+}
+textarea {
+    resize: none;
+}
+h2 {
+    text-align: center;
+}
+.block {
+    margin: 20px 0;
+}
