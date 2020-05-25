@@ -1,4 +1,5 @@
 "use strict";
+
 let start = false;
 let timer = moment("00:00", "mm:ss");
 let interval;
@@ -26,6 +27,5 @@ $(document).ready(function () {
 function AddSecond() {
     timer.add(1, "s");
     $('.screen').text(timer.format("mm:ss"));
-
 }
 

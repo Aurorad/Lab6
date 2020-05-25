@@ -3,18 +3,13 @@
 $("document").ready(function () {
     $.getJSON("http://dummy.restapiexample.com/api/v1/employees", function (data) {
         console.log(data);
-
-        /*data.data.forEach(element => {
-            let p = $("<p></p>").text(element.id);
-            $(".block").append(p);
-        })*/
         data.data.forEach(employee=>{
            AddRow(employee);
         });
     });
 });
-function AddRow(employee) {
 
+function AddRow(employee) {
     let row = $("<tr></tr>");
     let id = $("<td></td>").text(employee.id);
     row.append(id);
